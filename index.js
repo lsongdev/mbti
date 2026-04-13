@@ -273,7 +273,7 @@ const App = ({ questions, typeDescriptions, dimensionLabels, dimensionLetters })
 
 ready(async () => {
   const app = document.getElementById('mbti-app');
-  const data = await loadJSON('/data.json');
+  const data = await loadJSON('data.json');
   const { questions, typeDescriptions, dimensionLabels, dimensionLetters } = data;
   render(h(App, { questions, typeDescriptions, dimensionLabels, dimensionLetters }), app);
 });
